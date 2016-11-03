@@ -1,0 +1,146 @@
+/* Reseteamos los estilos de margin y padding */
+{
+margin: 0;
+padding: 0;
+}
+/* Le dice al navegador que dibuje los elementos de HTML 5 como block */
+header, footer, aside, nav, article {
+display: block;
+
+}
+body {
+margin: 0 auto;
+width: 940px;
+font: 13px/22px Helvetica, Arial, sans-serif;
+background: #0FF;
+text-align : justify;
+}
+h2 {
+font-size: 28px;
+line-height: 44px;
+padding: 22px 0;
+}
+h3 {
+font-size: 18px;
+line-height: 22px;
+padding: 11px 0;
+}
+p {
+padding-bottom: 22px;
+}
+nav {
+position: absolute;
+left: 0;
+width: 100%;
+background: url(“nav_background”);
+}
+nav ul {
+margin: 0 auto;
+width: 940px;
+list-style: none;
+}
+nav ul li {
+float: left;
+}
+nav ul li a {
+display: block;
+margin-right: 20px;
+width: 140px;
+font-size: 14px;
+line-height: 44px;
+text-align: center;
+text-decoration: none;
+color: #black;
+}
+nav ul li a:hover {
+color: #F0F;
+}
+nav ul li.selected a {
+color: #f0f;
+}
+nav ul li.subscribe a {
+margin-left: 22px;
+padding-left: 33px;
+text-align: left;
+background: url(“rss.png”) left center no-repeat;
+}
+#intro {
+margin-top: 66px;
+padding: 44px;
+background: #467612 url(“intro_background.png”) repeat-x;
+background-size: 100%;
+border-radius: 22px;
+
+/* Background-size not implemented yet */
+-webkit-background-size: 100%;
+-o-background-size: 100%;
+-khtml-background-size: 100%;
+/* Border-radius not implemented yet */
+-moz-border-radius: 22px;
+-webkit-border-radius: 22px;
+
+
+}
+
+
+#intro h2, #intro p{
+width: 880px;
+
+}
+#intro h2 {
+padding: 0 0 22px 0;
+font-weight: normal
+color: #F0F;
+}
+#intro p {
+padding: 0;
+color: #black;
+}
+
+
+#content {
+display: table;
+}
+#mainContent {
+display: table-cell;
+width: 620px;
+padding-right: 22px;
+}
+aside {
+display: table-cell;
+width: 300px;
+}
+
+blogPost div {
+column-count: 1;
+column-gap: 22px;
+}
+
+.blogPost {
+column-count: 1;
+column-gap: 22px;
+}
+.blogPost header {
+column-span: all;
+}
+
+.blogPost div {
+/* Column-count not implemented yet */
+-moz-column-count: 2;
+-webkit-column-count: 2;
+/* Column-gap not implemented yet */
+-moz-column-gap: 22px;
+-webkit-column-gap: 22px;
+text-align : justify;
+
+}
+
+.blogPost img {
+margin: 22px 0;
+box-shadow: 3px 3px 7px #666;
+}
+
+.blogPost img {
+margin: 22px 0;
+-webkit-box-shadow: 3px 3px 7px #666;
+}
